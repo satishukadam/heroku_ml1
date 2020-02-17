@@ -11,7 +11,7 @@ model_path = os.path.join(BASE_DIR, 'models/regression_model.pkl')
 
 app = Flask(__name__, template_folder=template_folder_path)
 
-model = joblib.load(open(model_path, 'rb'))
+model = joblib.load(open('models/regression_model.pkl', 'rb'))
 
 
 # Default page api
