@@ -8,7 +8,7 @@
     <h1>
         <font color="red">Height to Weight Calculator</font>
     </h1>
-    <form action = "http://localhost:9000/predict" method = "POST">
+    <form action = "{{ url_for('predict')}}"method="post">
          <p>Enter Height: <input type = "text" name = "Name" /></p>
         <p><input type = "submit" value = "Calculate Weight" /></p>
     </form>
